@@ -25,9 +25,12 @@ Test the getTotalBalance function to display the total balance of all active acc
     <title>Bank Account management System</title>
 </head>
 <body>
-    <h1>Hii, This is a bank account managment system</h1>
+    <label for="" >Account Number</label><br>
+    <input id="accountnumber" type="number" placeholder="Enter your AccountNumber ">
 </body>
 <script>
+    let number=document.getElementById("accountnumber");
+    console.log(number.value);
    function BankAccount(accountNumber,name,type,balance){
     this.accountNumber=accountNumber;
     this.name=name;
